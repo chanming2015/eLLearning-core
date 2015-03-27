@@ -21,12 +21,39 @@
 	</properties>
 
 	<dependencies>
+		<!-- ************************测试的包****************************** -->
+		<!-- JUnit单元测试框架 -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+		</dependency>
+		<!-- Spring整合JUnit单元测试框架 -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+		</dependency>
+		<!-- 基于service层的测试包 -->
+		<dependency>
+			<groupId>org.easymock</groupId>
+			<artifactId>easymock</artifactId>
+		</dependency>
+		<!-- 基于dao层的DBunit的测试框架 -->
+		<dependency>
+			<groupId>org.dbunit</groupId>
+			<artifactId>dbunit</artifactId>
+		</dependency>
+		<!-- Spring整合DBunit数据库的单元测试框架 -->
+		<dependency>
+			<groupId>com.github.springtestdbunit</groupId>
+			<artifactId>spring-test-dbunit</artifactId>
+		</dependency>
+
 		<!-- basic-hibernate组件 -->
 		<dependency>
 			<groupId>com.dyr.xms.test</groupId>
 			<artifactId>basic-hibernate</artifactId>
 		</dependency>
-		
+
 		<!-- 验证组件 -->
 		<dependency>
 			<groupId>org.wicketstuff</groupId>
