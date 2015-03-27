@@ -1,0 +1,54 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<!-- 继承 eLearning的pom文件 -->
+	<parent>
+		<groupId>com.dyr.xms.test</groupId>
+		<artifactId>eLearning-parent</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+		<relativePath>../../eLLearning-parent/eLearning-parent/pom.xml</relativePath>
+	</parent>
+
+	<artifactId>eLearning-core</artifactId>
+	<packaging>jar</packaging>
+
+	<name>eLearning-core</name>
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<dependencies>
+		<!-- basic-hibernate组件 -->
+		<dependency>
+			<groupId>com.dyr.xms.test</groupId>
+			<artifactId>basic-hibernate</artifactId>
+		</dependency>
+		
+		<!-- 验证组件 -->
+		<dependency>
+			<groupId>org.wicketstuff</groupId>
+			<artifactId>jsr303</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-validator</artifactId>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<!-- 项目插件管理 -->
+		<pluginManagement>
+			<plugins>
+				<!-- 利用maven-compiler-plugin插件设置项目编译环境为jre1.6 -->
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+</project>
