@@ -6,9 +6,10 @@
  * Author XuMaoSen
  */
 package com.dyr.xms.test.dao;
-
 import java.io.IOException;
 import java.sql.SQLException;
+import java.util.Date;
+
 import javax.inject.Inject;
 import org.dbunit.DatabaseUnitException;
 import org.dbunit.dataset.DataSetException;
@@ -70,6 +71,7 @@ public class TestUserDAO extends AbstractDbUnitTestCase{
 	
 	@Test
 	public void testSelectUserByNameAndPass() throws IOException, DatabaseUnitException, SQLException {
+		new Date();
 		IDataSet ds = createDateSet("tb_user");
 		DatabaseOperation.CLEAN_INSERT.execute(dbunitCon, ds);
 		User user = userDAO.selectUserByNameAndPass("admin1", "123");

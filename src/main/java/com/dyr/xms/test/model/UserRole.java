@@ -7,22 +7,21 @@
  */
 package com.dyr.xms.test.model;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 /**
  * Project:eLearning-core
  * Package:com.dyr.xms.test.model
- * FileName:Role.java
+ * FileName:UserRole.java
  * Comments:
  * JDK Version:
  * Author XuMaoSen
- * Create Date:2015-3-27 下午4:33:11
+ * Create Date:2015-3-27 下午4:31:33
  * Modified By:XuMaoSen
  * Modified Time:
  * What is Modified:
@@ -30,21 +29,12 @@ import javax.persistence.Table;
  * Version:
  */
 @Entity
-@Table(name="t_role")
-public class Role {
+@Table(name="tb_user_role")
+public class UserRole {
 	
 	private Integer id;
-	private String name;
-	private RoleType roleType;
-	
-	public Role(){
-		
-	}
-	public Role(Integer id, String name, RoleType roleType) {
-		this.id = id;
-		this.name = name;
-		this.roleType = roleType;
-	}
+	private User user;
+	private Role role;
 	/**
 	 * Author XuMaoSen
 	 * @return the id
@@ -63,33 +53,35 @@ public class Role {
 	}
 	/**
 	 * Author XuMaoSen
-	 * @return the name
+	 * @return the user
 	 */
-	public String getName() {
-		return name;
+	@ManyToOne
+	@JoinColumn(name="u_id")
+	public User getUser() {
+		return user;
 	}
 	/**
 	 * Author XuMaoSen
-	 * @param name the name to set
+	 * @param user the user to set
 	 */
-	public void setName(String name) {
-		this.name = name;
+	public void setUser(User user) {
+		this.user = user;
 	}
 	/**
 	 * Author XuMaoSen
-	 * @return the roleType
+	 * @return the role
 	 */
-	@Enumerated(EnumType.STRING)
-	@Column(name="role_type")
-	public RoleType getRoleType() {
-		return roleType;
+	@ManyToOne
+	@JoinColumn(name="r_id")
+	public Role getRole() {
+		return role;
 	}
 	/**
 	 * Author XuMaoSen
-	 * @param roleType the roleType to set
+	 * @param role the role to set
 	 */
-	public void setRoleType(RoleType roleType) {
-		this.roleType = roleType;
+	public void setRole(Role role) {
+		this.role = role;
 	}
 
 }

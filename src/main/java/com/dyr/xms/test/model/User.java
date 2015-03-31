@@ -7,15 +7,13 @@
  */
 package com.dyr.xms.test.model;
 
-import java.util.Date;
-
+import java.sql.Date;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
-
 import org.hibernate.validator.constraints.Email;
 
 /**
@@ -33,7 +31,7 @@ import org.hibernate.validator.constraints.Email;
  * Version:
  */
 @Entity
-@Table(name="t_user")
+@Table(name="tb_user2")
 public class User {
 
 	private Integer id;

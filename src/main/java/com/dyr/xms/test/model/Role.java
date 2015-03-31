@@ -7,21 +7,22 @@
  */
 package com.dyr.xms.test.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 /**
  * Project:eLearning-core
  * Package:com.dyr.xms.test.model
- * FileName:UserGroup.java
+ * FileName:Role.java
  * Comments:
  * JDK Version:
  * Author XuMaoSen
- * Create Date:2015-3-27 下午4:43:42
+ * Create Date:2015-3-27 下午4:33:11
  * Modified By:XuMaoSen
  * Modified Time:
  * What is Modified:
@@ -29,12 +30,21 @@ import javax.persistence.Table;
  * Version:
  */
 @Entity
-@Table(name="t_user")
-public class UserGroup {
-
+@Table(name="tb_role")
+public class Role {
+	
 	private Integer id;
-	private User user;
-	private Group group;
+	private String name;
+	private RoleType roleType;
+	
+	public Role(){
+		
+	}
+	public Role(Integer id, String name, RoleType roleType) {
+		this.id = id;
+		this.name = name;
+		this.roleType = roleType;
+	}
 	/**
 	 * Author XuMaoSen
 	 * @return the id
@@ -53,34 +63,33 @@ public class UserGroup {
 	}
 	/**
 	 * Author XuMaoSen
-	 * @return the user
+	 * @return the name
 	 */
-	@ManyToOne
-	@JoinColumn(name="u_id")
-	public User getUser() {
-		return user;
+	public String getName() {
+		return name;
 	}
 	/**
 	 * Author XuMaoSen
-	 * @param user the user to set
+	 * @param name the name to set
 	 */
-	public void setUser(User user) {
-		this.user = user;
+	public void setName(String name) {
+		this.name = name;
 	}
 	/**
 	 * Author XuMaoSen
-	 * @return the group
+	 * @return the roleType
 	 */
-	@ManyToOne
-	@JoinColumn(name="g_id")
-	public Group getGroup() {
-		return group;
+	@Enumerated(EnumType.STRING)
+	@Column(name="role_type")
+	public RoleType getRoleType() {
+		return roleType;
 	}
 	/**
 	 * Author XuMaoSen
-	 * @param group the group to set
+	 * @param roleType the roleType to set
 	 */
-	public void setGroup(Group group) {
-		this.group = group;
+	public void setRoleType(RoleType roleType) {
+		this.roleType = roleType;
 	}
+
 }

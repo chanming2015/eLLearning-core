@@ -27,7 +27,7 @@ import javax.persistence.Table;
  * Version:
  */
 @Entity
-@Table(name="t_group")
+@Table(name="tb_group")
 public class Group {
 
 	private Integer id;

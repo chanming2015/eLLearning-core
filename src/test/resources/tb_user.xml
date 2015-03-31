@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+	<tb_user2 username="admin1" password="123" nickname="aaa" email="123456@qq.com" phone="0237896542" status="0" createDate="1-1月-15" />
+	<tb_user2 username="admin2" password="123" nickname="aaa" email="123456@qq.com" phone="0237896542" status="0" createDate="1-1月-15" />
+	<tb_user2 username="admin3" password="123" nickname="aaa" email="123456@qq.com" phone="0237896542" status="0" createDate="1-1月-15" />
+	<tb_user2 username="admin4" password="123" nickname="aaa" email="123456@qq.com" phone="0237896542" status="0" createDate="1-1月-15" />
+	<tb_user2 username="admin5" password="123" nickname="aaa" email="123456@qq.com" phone="0237896542" status="0" createDate="1-1月-15" />
+	<tb_user2 username="admin6" password="123" nickname="aab" email="123456@qq.com" phone="0237896542" status="0" createDate="1-1月-15" />
+	<tb_user2 username="admin7" password="123" nickname="aab" email="123456@qq.com" phone="0237896542" status="0" createDate="1-1月-15" />
+	<tb_user2 username="admin8" password="123" nickname="aab" email="123456@qq.com" phone="0237896542" status="0" createDate="1-1月-15" />
+	<tb_user2 username="admin9" password="123" nickname="aab" email="123456@qq.com" phone="0237896542" status="0" createDate="1-1月-15" />
+	<tb_user2 username="admin10" password="123" nickname="aab" email="123456@qq.com" phone="0237896542" status="0" createDate="1-1月-15" />
+	<tb_user2 username="admin11" password="123" nickname="aac" email="123456@qq.com" phone="0237896542" status="0" createDate="1-1月-15" />
+	<tb_user2 username="admin12" password="123" nickname="aac" email="123456@qq.com" phone="0237896542" status="0" createDate="1-1月-15" />
+	<tb_user2 username="admin13" password="123" nickname="aac" email="123456@qq.com" phone="0237896542" status="0" createDate="1-1月-15" />
+	<tb_user2 username="admin14" password="123" nickname="aac" email="123456@qq.com" phone="0237896542" status="0" createDate="1-1月-15" />
+	<tb_user2 username="admin15" password="123" nickname="aac" email="123456@qq.com" phone="0237896542" status="0" createDate="1-1月-15" />
+	<tb_user2 username="admin16" password="123" nickname="aac" email="123456@qq.com" phone="0237896542" status="0" createDate="1-1月-15" />
+	<tb_user2 username="admin17" password="123" nickname="aac" email="123456@qq.com" phone="0237896542" status="0" createDate="1-1月-15" />
+	<tb_user2 username="admin18" password="123" nickname="aac" email="123456@qq.com" phone="0237896542" status="0" createDate="1-1月-15" />
+</dataset>
+

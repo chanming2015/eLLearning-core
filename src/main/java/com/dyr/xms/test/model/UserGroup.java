@@ -17,11 +17,11 @@ import javax.persistence.Table;
 /**
  * Project:eLearning-core
  * Package:com.dyr.xms.test.model
- * FileName:UserRole.java
+ * FileName:UserGroup.java
  * Comments:
  * JDK Version:
  * Author XuMaoSen
- * Create Date:2015-3-27 下午4:31:33
+ * Create Date:2015-3-27 下午4:43:42
  * Modified By:XuMaoSen
  * Modified Time:
  * What is Modified:
@@ -29,12 +29,12 @@ import javax.persistence.Table;
  * Version:
  */
 @Entity
-@Table(name="t_user_role")
-public class UserRole {
-	
+@Table(name="tb_user_group")
+public class UserGroup {
+
 	private Integer id;
 	private User user;
-	private Role role;
+	private Group group;
 	/**
 	 * Author XuMaoSen
 	 * @return the id
@@ -69,19 +69,18 @@ public class UserRole {
 	}
 	/**
 	 * Author XuMaoSen
-	 * @return the role
+	 * @return the group
 	 */
 	@ManyToOne
-	@JoinColumn(name="r_id")
-	public Role getRole() {
-		return role;
+	@JoinColumn(name="g_id")
+	public Group getGroup() {
+		return group;
 	}
 	/**
 	 * Author XuMaoSen
-	 * @param role the role to set
+	 * @param group the group to set
 	 */
-	public void setRole(Role role) {
-		this.role = role;
+	public void setGroup(Group group) {
+		this.group = group;
 	}
-
 }
